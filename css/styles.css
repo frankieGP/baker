@@ -1,3 +1,6 @@
+
+
+
 *:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
@@ -12,42 +15,6 @@ html {
 .wrap {
   width: 90%;
   margin: 0 auto;
-}
-/*.columns {
-  min-height: 100px;
-  float: right;
-}*/
-
-/*@media screen and (min-width:400px) {
-  .navbar, .logo {
-    float: center;
- }
-}*/
-@media screen and (max-width:800px) {
-  .navbar, .logo, h1  {
-    float: center;
-    text-align: center;
-  }
-  li {
-    float: left;
-    text-align: center;
-  }
-.col1, .col2 {
-  float: none;
-  width: 100%;
-  margin: 0;
-}
-  .images {
-    column-count: 2;
-    float: center;
-    text-align: center;
-  }
-}
-@media screen and (min-width:1200px) {
-  .navbar, .logo {
-    float: left;
-  }
-
 
 }
 
@@ -63,4 +30,58 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+
+@media screen and (max-width:800px) {
+  .col1, h1 {
+    float: center;
+    text-align: center;
+    vertical-align: baseline;
+  }
+  .navbar{
+  display: block;
+  vertical-align: bottom;
+  }
+
+  .col1, .col2, {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .images {
+    column-count: 2;
+    float: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:801px) {
+
+  .col1 {
+    float: left;
+    max-width: 25%;
+    background-color: red;
+    vertical-align: baseline;
+    /*margin-right: 40em;*/
+  }
+
+  .col2 {
+    float: right;
+    max-width: 75%;
+    margin-top: 20em;
+
+
+  }
+  .navbar{
+
+    background-color: green;
+  }
+
+
+  .images{
+    column-count: 3;
+  }
+
 }
