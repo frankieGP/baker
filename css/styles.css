@@ -32,6 +32,40 @@ img {
   max-width: 100%;
 }
 
+/*biggest*/
+@media screen and (min-width:1200px) {
+  .wrap{
+    position: relative;
+  }
+  .col1 {
+    clear: both;
+    float: left;
+    width: 25%;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 70%;
+    top: -5em;
+    right: 0em;
+  }
+
+  .logo {
+    margin-top: 5em;
+    background-color: pink;
+  }
+  .col2 {
+    float: right;
+    margin-left: 10em;
+    position: absolute;
+    top: -5em;
+    width: 70%;
+  }
+
+  .images {
+    column-count: 6;
+  }
+}
 
 /*bigger*/
 @media screen and (min-width:600px) {
