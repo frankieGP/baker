@@ -1,0 +1,54 @@
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+/*.columns {
+  min-height: 100px;
+  float: right;
+}*/
+
+/*@media screen and (min-width:400px) {
+  .navbar, .logo {
+    float: center;
+ }
+}*/
+@media screen and (max-width:800px) {
+  .navbar, .logo  {
+    float: center;
+    text-align: center;
+  }
+
+}
+@media screen and (min-width:1200px) {
+  .navbar, .logo {
+    float: left;
+  }
+  .columns {
+    float: right;
+  }
+}
+.images {
+  text-align: center;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/*
+img {
+  max-width: 100%;
+}*/
