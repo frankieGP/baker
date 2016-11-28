@@ -24,23 +24,35 @@ html {
  }
 }*/
 @media screen and (max-width:800px) {
-  .navbar, .logo  {
+  .navbar, .logo, h1  {
     float: center;
     text-align: center;
   }
-
+  li {
+    float: left;
+    text-align: center;
+  }
+.col1, .col2 {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+  .images {
+    column-count: 2;
+    float: center;
+    text-align: center;
+  }
 }
 @media screen and (min-width:1200px) {
   .navbar, .logo {
     float: left;
   }
-  .columns {
-    float: right;
-  }
-}
-.images {
-  text-align: center;
 
+
+}
+
+.image-header {
+  text-align: center;
 }
 ul {
   list-style-type: none;
@@ -48,7 +60,7 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-/*
+
 img {
   max-width: 100%;
-}*/
+}
