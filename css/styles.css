@@ -26,6 +26,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: blue;
 }
 
 img {
@@ -33,14 +34,14 @@ img {
 }
 
 /*biggest*/
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1000px) {
   .wrap{
     position: relative;
   }
   .col1 {
     clear: both;
     float: left;
-    width: 25%;
+    width: 20%;
   }
 
   .navbar {
@@ -49,6 +50,14 @@ img {
     top: -5em;
     right: 0em;
   }
+
+  .navbar li {
+    width: 6em;
+    display: inline-block;
+    margin: 0 auto;
+
+  }
+
 
   .logo {
     margin-top: 5em;
@@ -59,12 +68,13 @@ img {
     margin-left: 10em;
     position: absolute;
     top: -5em;
-    width: 70%;
+    width: 80%;
   }
 
   .images {
-    column-count: 6;
+    clear: both;
   }
+
 }
 
 /*bigger*/
